@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <style>
+        body, html {
+    height: 100%;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #666;
+    text-align: center;
+}
+li{
+    float: left;
+    list-style: none;
+    margin-left: 80px;
+    opacity: 200%;
+    font-weight: bolder;
+    color: black;
+    font-size: 20px;
+}
+nav{
+    position: relative;
+    right: 10px;
+    height: fit-content;
+    top: 5px;
+    z-index: 10;
+}
+.parallax1 {
+    background-image: url('thomson.jpg');
+    min-height: 100%;
+}
+.parallax2 {
+    background-image: url('mgcl.jpg');
+    min-height: 60%;
+}
+.parallax3 {
+    background-image: url('rainbow.webp');
+    min-height: 40%;
+}
+.parallax4 {
+    background-image: url('thomson2.jpg');
+    min-height: 100%;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.head {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 500%;
+    top:65%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    animation: drop 4.0s ease; 
+   cursor: pointer;
+}
+.head p{
+    font-size: 15px;
+   
+}
+section {
+    overflow: auto;
+    padding: 50px 80px;
+}
+
+footer{
+    width: 100%;
+    background-color: #323232;
+    color: #f2f2f2;
+    height: 8vh;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+}
+
+@media (max-width:800px) {
+    .head{
+        font-size: 200%;
+    }
+   
+}
+
+
+@keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  footer a{
+    text-decoration: none;
+color: white
+  }
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Initiatives</li>
+                <li>Our previous Alumni</li>
+                <li>Reunion 1975</li>
+                <li>About Us</li>
+                <li>Contact Us </li>
+            </ul>
+        </nav>
+        </header>
+    <div class="parallax1">
+        <div class="head">
+            IARC<br>
+            <p>
+            Institute Alumini Relations Cell</p>
+        </div>
+    </div>
+    <section>
+        <h1>ABOUT IARC</h1>
+        <div>
+            <p>
+                The Institute Alumni Relations Cell is a student body working under the aegis of the Dean of Resources and Alumni Affairs (DORA), IIT Roorkee. The vision of the cell is to connect our alumni to their alma mater and foster the alumni network through various initiatives, including Class Song'2018, Raionzo, which a one of a kind student alumni fest, Alumni Career Talks (ACT), where we invite our esteemed alumni to guide the students on various topics, R-Land memoirs, where we take a glimpse on IIT Roorkee's rich history, etc. IARC is also working on the alum database under DORA's guidance and aims to provide Alumni mentorship to current students.The IARC has started its work on all of its initiatives and has received positive responses and appreciation. IARC hopes to introduce new initiatives and programs with your help and support in the forthcoming years to provide mentorship to current students.
+            </p>
+        </div>
+
+    </section>
+
+    <div class="parallax2">
+
+
+    </div>
+    <section>
+        <h1>INTIATIVES UNDER IARC</h1>
+        <p>The developments and initiatives being taken up by the IARC are:Class Song,Alumni career Talks,R-Land memoirs,Mock interviews,Giving Back Repory,Yearbook
+        </p>
+    </section>
+    <div class="parallax3">
+
+    </div>
+    <div>
+        <section>
+            <h1>ABOUT IITR</h1>
+            <p> IIT Roorkee is one of the biggest technical institutions in the country having the largest number of academic units. It has 23 academic departments covering engineering, architecture and planning, humanities & social sciences, and management programmes, 1 school, 6 academic centres, 7 academic service centres and 6 supporting units
+            </p>
+        </section>
+
+    </div>
+    <div class="parallax4">
+        <div class="head">
+            The End...
+        </div>
+    </div>
+    <footer>
+         Follow Us for more upcoming details :<a href="https://linktr.ee/iarc_iitr?fbclid=PAAaYVJLLCjxQ6b3NBegfuhCzyRcxRTs35AiZKEegsv6SIwomdCO46w04RUMg">IARC Linktree</a>
+    </footer>
+
+</body>
+</html>
